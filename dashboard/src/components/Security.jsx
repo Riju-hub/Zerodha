@@ -39,7 +39,7 @@ const Security = () => {
 
     try {
     const { data } = await axios.post(
-      "http://localhost:5000/change-password", // Ensure port matches your server
+      "https://zerodha-backend-hm17.onrender.com/change-password", // Ensure port matches your server
       {
         currentPassword: formData.currentPassword,
         newPassword: formData.newPassword,

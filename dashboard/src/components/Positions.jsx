@@ -8,7 +8,7 @@ const Positions = () => {
 
   useEffect(() => {
     document.title = "Positions / Kite";
-    axios.get("http://localhost:5000/allPositions").then((res) => {
+    axios.get("https://zerodha-backend-hm17.onrender.com/allPositions").then((res) => {
       console.log(res.data);
       setAllPositions(res.data);
     });

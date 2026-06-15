@@ -117,7 +117,7 @@ const BuyActionWindow = ({ uid , mode }) => {
         return;
       }
     }
-    axios.post("http://localhost:5000/newOrder", {
+    axios.post("https://zerodha-backend-hm17.onrender.com/newOrder", {
       name: uid,
       qty: Number(stockQuantity),
       price: Number(stockPrice),

@@ -37,7 +37,7 @@ export const GeneralContextProvider = (props) => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/allHoldings").then((res) => {
+    axios.get("https://zerodha-backend-hm17.onrender.com/allHoldings").then((res) => {
       setAllHoldings(res.data);
     });
   }, [holdingsRefreshTrigger]);

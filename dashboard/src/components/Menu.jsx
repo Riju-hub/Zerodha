@@ -45,7 +45,7 @@ const Menu = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/logout", {}, { withCredentials: true });
+      await axios.post("https://zerodha-backend-hm17.onrender.com/logout", {}, { withCredentials: true });
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("username");
       localStorage.removeItem("userEmail");

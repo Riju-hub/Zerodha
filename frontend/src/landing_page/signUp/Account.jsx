@@ -48,7 +48,7 @@ function Account() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/signup",
+        "https://zerodha-backend-hm17.onrender.com/signup",
         { ...inputValue },
         { withCredentials: true }
       );
