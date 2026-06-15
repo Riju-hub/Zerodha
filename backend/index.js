@@ -30,8 +30,9 @@ app.use(cors(
     origin: [
         "http://localhost:5173", 
         "http://localhost:5174",
-        "https://your-frontend.vercel.app",
-        "https://your-dashboard.vercel.app"    
+        // 🌐 Your real live production websites
+        "https://zerodha-frontend-sable.vercel.app",
+        "https://zerodha-dashboard-self.vercel.app"    
     ], // Allow Vite frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Required for cookies/sessions

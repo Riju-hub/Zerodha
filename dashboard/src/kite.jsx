@@ -109,13 +109,13 @@ function Kite() {
                     </a>
                 </div>
                 {/* 3. Click Zerodha Logo move to Frontend (5173) */}
-                <a href="http://localhost:5173">
+                <a href="https://zerodha-frontend-sable.vercel.app/">
                     <img src="media/zerodha-logo.svg" alt="Zerodha" className="footer-brand mb-2" />
                 </a>
                 {/* 4. Sign up for free points to Frontend (5173/signUp) */}
                 <p className="footer-text">
                     Don't have an account?{" "}
-                    <a href="http://localhost:5173/signUp" className="text-decoration-none">
+                    <a href="https://zerodha-frontend-sable.vercel.app/signUp" className="text-decoration-none">
                         Sign up for free!
                     </a>
                 </p>
