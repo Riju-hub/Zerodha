@@ -36,28 +36,28 @@ function Navbar() {
                 <div className="container">
                   <div className="row text-center mb-4">
                     <div className="col-3 menu-div mt-2">
-                      <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none"> 
+                      <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none"> 
                         <img src="media/kite-logo.svg" alt="Kite" style={{width: "40px"}} />
                         <h6 className="mt-2 mb-0">Kite</h6>
                         <p className="text-muted small mt-2">Trading platform</p>
                       </a>
                     </div>
                     <div className="col-3 menu-div">
-                      <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                      <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                         <img src="media/console-logo.svg" alt="Console" style={{width: "40px"}} />
                         <h6 className="mt-2 mb-0">Console</h6>
                         <p className="text-muted small mt-2">Backoffice</p>
                       </a>
                     </div>
                     <div className="col-3 menu-div">
-                      <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                      <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                         <img src="media/kite-connect-logo.svg" alt="Kite Connect" style={{width: "40px"}} />
                         <h6 className="mt-2 mb-0">Kite Connect</h6>
                         <p className="text-muted small mt-2">Trading APIs</p>
                       </a>
                     </div>
                     <div className="col-3 menu-div">
-                      <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                      <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                         <img src="media/coin-logo.svg" alt="Coin" style={{width: "40px"}} />
                         <h6 className="mt-2 mb-0">Coin</h6>
                         <p className="text-muted small mt-2">Mutual funds</p>
@@ -126,25 +126,25 @@ function Navbar() {
 
             <div className="row my-4 gy-4 align-items-center">
               <div className="col-6 menu-div d-flex align-items-center">
-                <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none"> 
+                <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none"> 
                   <img src="media/kite-logo.svg"  className="me-2" style={{width:"20%"}}/> 
                   <span className="text-dark">Kite</span>
                 </a>
               </div>
               <div className="col-6 menu-div d-flex align-items-center">
-                <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <img src="media/console-logo.svg" style={{width:"20%"}} className="me-2"/> 
                   <span className="text-dark">Console</span>
                 </a>
               </div>
               <div className="col-6 menu-div d-flex align-items-center">
-                <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <img src="media/kite-connect-logo.svg" style={{width:"20%"}} className="me-2"/> 
                   <span className="text-dark">Kite Connect</span>
                 </a>
               </div>
               <div className="col-6 menu-div d-flex align-items-center">
-                <a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <a href="https://zerodha-dashboard-self.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <img src="media/coin-logo.svg" style={{width:"20%"}} className="me-2"/> 
                   <span className="text-dark">Coin</span>
                 </a>

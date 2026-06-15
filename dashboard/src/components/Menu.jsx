@@ -49,7 +49,7 @@ const Menu = () => {
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("username");
       localStorage.removeItem("userEmail");
-      window.location.href = "http://localhost:5174/login";
+      window.location.href = "https://zerodha-dashboard-self.vercel.app/login";
     } catch (err) {
       console.log("Logout failed", err);
     }
