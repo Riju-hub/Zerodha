@@ -4,7 +4,7 @@ import OpenAccount from '../OpenAccount';
 import Investment from './Investment';
 import StepDemat from './StepDemat';
 import Benefit from './Benefit';
-import Faqs from './FAQs';
+import Faqs from './Faqs';
 import Account from './Account';
 
 function Signup() {
