@@ -1,0 +1,1657 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dashboard-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.content {
+  flex-basis: 68%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 3% 2%;
+}
+
+.funds {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.funds p {
+  font-size: 0.8rem;
+  color: rgb(179, 179, 179);
+  margin-right: 8px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.btn-green {
+  background: #4caf50;
+}
+
+.btn-blue {
+  background: #4184f3;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.col {
+  flex-basis: 48%;
+  text-align: left;
+}
+
+.col span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.section-icon {
+  transform: scale(0.8);
+  color: rgb(66, 56, 56);
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.col span p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.table {
+  border: 1px solid #ddd;
+  padding: 5% 8%;
+}
+
+.table .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table .data > * {
+  margin-bottom: 5%;
+}
+
+.table .data p:first-child {
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+}
+
+.imp {
+  font-size: 1.5rem;
+  color: #313131;
+}
+
+.colored {
+  color: #4184f3;
+}
+
+.table hr {
+  border: none;
+  background: #d1d1d1;
+  height: 0.5px;
+  margin-bottom: 5%;
+}
+
+.commodity {
+  padding: 2% 8%;
+  text-align: center;
+}
+
+.commodity p {
+  margin-bottom: 10%;
+  color: #c9c9c9;
+}
+
+/* sudo selectors */
+.btn-blue:hover {
+  background: #74a7fa;
+}
+
+.btn-green:hover {
+  background: #7bdd7f;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  margin-bottom: 2%;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table tr {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.order-table th {
+  text-align: right;
+  padding: 15px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.order-table tr th:first-child,
+.order-table tr td:first-child {
+  text-align: left;
+}
+
+.order-table tr th:nth-child(1),
+.order-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr td:nth-child(1),
+.order-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr td:last-child {
+  font-size: 0.6rem;
+}
+
+.order-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.align-left {
+  text-align: left;
+}
+
+.order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.order-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.col {
+  flex-basis: 33%;
+}
+
+.col h5 {
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+}
+
+.col h5 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+.row .col:last-child h5 {
+  color: rgb(72, 194, 55);
+}
+
+/* sudo selector */
+.item:hover {
+  cursor: pointer;
+}
+
+.menu-container {
+  flex-basis: 68%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30px;
+  height: 20px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menus ul {
+  list-style-type: none;
+}
+
+.menus li {
+  display: inline-block;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(70, 70, 70);
+}
+
+.menu.selected {
+  color: rgb(245, 104, 52);
+}
+
+hr {
+  border-left: 0.8px solid rgb(243, 242, 242);
+  height: 30px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(221, 139, 221);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  background: rgb(252, 229, 252);
+  margin-right: 8px;
+}
+
+.profile .username {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* sudo selectors */
+
+.menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.profile:hover .username {
+  cursor: pointer;
+  color: rgb(223, 91, 43);
+}
+
+.orders {
+  width: 100%;
+  height: 90vh;
+}
+
+.no-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-orders .icon {
+  transform: scale(4);
+  color: rgb(173, 173, 173);
+  display: block;
+}
+
+.no-orders p {
+  margin-top: 6%;
+  color: rgb(173, 173, 173);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.btn {
+  text-decoration: none;
+  background: rgb(77, 77, 248);
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background: rgb(110, 110, 253);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  margin-bottom: 2%;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table tr {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.order-table th {
+  text-align: right;
+  padding: 15px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.order-table tr th:first-child,
+.order-table tr td:first-child {
+  text-align: left;
+}
+
+.order-table tr td:first-child p {
+    background: rgb(255, 197, 197);
+    color: rgb(233, 120, 120);
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.order-table tr td:last-child {
+  font-size: 0.6rem;
+}
+
+.order-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.align-left {
+  text-align: left;
+}
+
+.order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.order-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.col {
+  flex-basis: 33%;
+}
+
+.col h5 {
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+}
+
+.col h5 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+.row .col:last-child h5 {
+  color: rgb(72, 194, 55);
+}
+
+/* sudo selector */
+.item:hover {
+  cursor: pointer;
+}
+
+.username h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  background: #d1d1d1;
+  height: 1px;
+  margin: 20px 0;
+  margin-bottom: 5%;
+}
+
+.section {
+  padding-bottom: 2%;
+}
+
+.section span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.section span p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.section-icon {
+  transform: scale(0.8);
+  color: rgb(112, 112, 112);
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.data {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.data .first h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+}
+
+.data .first p {
+  font-size: 0.8rem;
+  color: rgb(136, 136, 136);
+}
+
+.data .first small {
+  font-size: 0.8rem;
+  color: rgb(72, 194, 55);
+}
+
+.data .first .profit {
+  color: rgb(72, 194, 55);
+}
+
+.data hr {
+  border-left: 0.6px solid rgb(243, 242, 242);
+  height: 70px;
+}
+
+.data .second p {
+  font-size: 0.8rem;
+  color: rgb(136, 136, 136);
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.data .second p span {
+  display: inline;
+  margin-left: 5%;
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+
+.section hr {
+  margin-top: 6%;
+}
+
+.topbar-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 4px 2px rgb(236, 235, 235);
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+.indices-container {
+  flex-basis: 32%;
+  height: 100%;
+  padding: 10px 20px;
+  border-right: 1px solid rgb(224, 224, 224);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nifty {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: -2;
+}
+
+.sensex {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nifty > *,
+.sensex > * {
+  margin-right: 8px;
+}
+
+.index {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(97, 97, 97);
+  white-space: nowrap;
+}
+
+.index-points {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(223, 73, 73);
+}
+
+.percent {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(146, 146, 146);
+}
+
+/* sudo selectors */
+.index:hover {
+  cursor: pointer;
+}
+
+.watchlist-container {
+  flex-basis: 32%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
+  overflow-y: auto;
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  height: 6%;
+  border: none;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(241, 241, 241);
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+}
+
+.counts {
+  position: absolute;
+  right: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(177, 177, 177);
+}
+
+.list {
+  list-style-type: none;
+  padding-bottom: 12%;
+}
+
+.list li {
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  padding: 12px 10px 12px 14px;
+  position: relative;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item-info > * {
+  margin-right: 8px;
+}
+
+.item-info span:nth-child(1) {
+  color: rgb(141, 141, 141);
+  flex: 1;
+}
+
+.item-info span:nth-child(2) {
+  color: rgb(223, 73, 73);
+  margin-right: 12px;
+  flex: 2;
+}
+
+.item-info span:nth-child(3) {
+  color: rgb(223, 73, 73);
+  flex: 1;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  display: none;
+}
+
+.actions span button {
+  width: 40px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.buy {
+  background-color: #4184f3;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid #4184f3;
+}
+
+.sell {
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid #ff5722;
+}
+
+.action {
+  background-color: #fff;
+  border: 0.7px solid #9b9b9b;
+}
+
+.icon {
+  transform: scale(0.7);
+  color: rgb(65, 65, 65);
+}
+
+.watchlist-number {
+  height: 6%;
+  width: 32%;
+  box-sizing: border-box;
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 1px;
+  padding: 20px 20px 20px 0;
+  left: 0;
+  border: 1px solid rgb(231, 231, 231);
+  z-index: 5;
+  background: #fff;
+}
+
+.watchlist-number ul {
+  list-style-type: none;
+}
+
+.watchlist-number ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  border-right: 1px solid rgb(231, 231, 231);
+}
+
+.watchlist-number ul li:nth-child(1) {
+  color: rgb(223, 73, 73);
+}
+
+.down {
+  color: rgb(223, 73, 73);
+}
+
+.up {
+  color: rgb(103, 201, 136);
+}
+
+.settings {
+  transform: scale(0.8);
+  color: rgb(105, 105, 105);
+}
+
+/* sudo selectors */
+.search:focus {
+  outline: none;
+}
+
+.list li:hover {
+  cursor: move;
+  background-color: #f3f3f3;
+}
+
+.list li:hover > .actions {
+  display: flex;
+  cursor: move;
+}
+
+/* TODO */
+.list li::before {
+  content: "";
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.watchlist-number ul li:hover {
+  color: rgb(245, 104, 52);
+  cursor: pointer;
+  background: rgb(243, 243, 243);
+}
+
+.settings:hover {
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+/* Responsive design */
+.menu-container {
+  position: relative; /* Important so dropdown positions relative to this */
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  right: 20px;
+  background: white;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.user-details {
+  padding: 15px 20px;
+}
+
+.user-details .name {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0;
+}
+
+.user-details .email {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-links a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-links a:hover {
+  background-color: #f9f9f9;
+  color: #387ed1;
+}
+
+.dropdown-links i {
+  margin-right: 12px;
+  width: 16px;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 0;
+}
+
+
+
+/* ==========================================================================
+   MOBILE-ONLY RESPONSIVE OVERRIDES (Max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* --- 1. Global Dashboard & Wrapper Layout Adjustments --- */
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 90vh;
+  }
+
+  /* Completely hide the desktop Watchlist component sidebar on mobile */
+  .dashboard-container > div:first-child:not(.content) {
+    display: none !important;
+  }
+
+  /* Expand main page content container to full width screen */
+  .content {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 15px 20px !important;
+    overflow-y: visible !important;
+  }
+
+  /* --- 2. TopBar & Header Section Fixes --- */
+  .topbar-container {
+    height: 60px !important;
+    padding: 0 15px !important;
+    justify-content: space-between !important;
+  }
+
+  /* Hide the Nifty/Sensex index pricing block completely on mobile */
+  .indices-container {
+    display: none !important;
+  }
+
+  .menu-container {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* --- 3. Profile Dropdown Modal Transformation (Image 2) --- */
+  /* This turns your normal profile dropdown into a clean fullscreen mobile navigation list */
+  .profile-dropdown {
+    position: fixed !important;
+    top: 60px !important; /* Positions it exactly beneath the top bar header line */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 60px) !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    z-index: 9999 !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    overflow-y: auto !important;
+  }
+
+  /* Hide raw details like name/email to match your clean navigational screenshot list */
+  .profile-dropdown .user-details,
+  .profile-dropdown hr {
+    display: none !important;
+  }
+
+  /* Format dropdown links into full-width elegant table rows */
+  .dropdown-links {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .dropdown-links a {
+    padding: 18px 20px !important; /* Matches height dimensions seen in image 2 */
+    font-size: 14px !important;
+    color: #444 !important;
+    border-bottom: 1px solid #f9f9f9 !important;
+    display: flex !important;
+    align-items: center !important;
+    text-transform: capitalize !important;
+  }
+
+  .dropdown-links a i {
+    margin-right: 15px !important;
+    width: 20px !important;
+    font-size: 16px !important;
+    color: #555 !important;
+  }
+
+  /* Hide inline navigational links & user text tags next to avatar on top bar header line */
+  .menus ul,
+  .menus hr,
+  .profile .username {
+    display: none !important;
+  }
+
+  /* Keep only the tiny user avatar bubble circle displayed */
+  .profile {
+    margin-left: 0 !important;
+  }
+
+  /* --- 4. Content Elements Data Realignment (Image 1) --- */
+  .username h6 {
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Flex summary data horizontally to let balance statements sit cleanly over columns */
+  .section .data {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+  }
+
+  .section .data hr {
+    display: none !important; /* Drop dividing line styles */
+  }
+
+  .data .first h3 {
+    font-size: 2.4rem !important;
+    font-weight: 300 !important;
+    margin: 0 0 5px 0 !important;
+  }
+
+  .data .second {
+    text-align: right !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+  }
+
+  .data .second p {
+    margin-bottom: 8px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .data .second p span {
+    margin-left: 6px !important;
+    display: inline-block !important;
+    min-width: 40px !important;
+    text-align: right !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE-ONLY MENU OVERRIDES (Max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 1. Reset TopBar Container for a clean mobile header */
+  .topbar-container {
+    height: 60px !important;
+    padding: 0 15px !important;
+    justify-content: space-between !important;
+    background: #fff !important;
+    border-bottom: 1px solid #eee !important;
+    box-shadow: none !important;
+  }
+
+  /* Hide Nifty and Sensex blocks on mobile completely */
+  .indices-container {
+    display: none !important;
+  }
+
+  /* 2. Format Menu Container alignment rules */
+  .menu-container {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .menu-container > a img {
+    width: 40px !important; /* Slightly more compact mobile branding asset size */
+  }
+
+  /* Hide the horizontal desktop navigational lists & dividers */
+  .menus ul,
+  .menus hr,
+  .profile .username {
+    display: none !important;
+  }
+
+  /* Style and position the unique mobile actions wrap container */
+  .menus {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .profile {
+    margin-left: 0 !important;
+  }
+
+  /* 3. Transform profile dropdown wrapper into full height list (image_6fb448.png) */
+  .profile-dropdown {
+    position: fixed !important;
+    top: 60px !important; /* Snaps pixel-perfect beneath top mobile bar */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 60px) !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    overflow-y: auto !important;
+    z-index: 99999 !important;
+  }
+
+  /* Hide personal details header fields inside navigation list frame */
+  .profile-dropdown .user-details,
+  .profile-dropdown hr {
+    display: none !important;
+  }
+
+  /* 4. Format list text item rows to sit stacked flush full-screen width */
+  .dropdown-links {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .dropdown-links a {
+    padding: 16px 24px !important; /* Replicates row height matrix */
+    font-size: 14px !important;
+    color: #444 !important;
+    border-bottom: 1px solid #f7f7f7 !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    background: #fff !important;
+  }
+
+  /* Style specific menu link row icons safely */
+  .dropdown-links a i {
+    margin-right: 15px !important;
+    width: 20px !important;
+    font-size: 15px !important;
+    color: #666 !important;
+    text-align: left !important;
+  }
+}
+
+
+
+
+/* Base Desktop Config: Hide mobile-specific items on laptop monitors */
+.mobile-only-link {
+  display: none !important;
+}
+.settings-fade {
+  color: #ccc;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+/* ==========================================================================
+   MOBILE-ONLY MENU OVERRIDES (Max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Show mobile-specific links only when viewport is under 768px */
+  .mobile-only-link {
+    display: flex !important;
+  }
+  
+  /* Rest of your mobile-only profile-dropdown overlay styles here... */
+}
+
+
+/* --- Base Desktop Behavior Configuration --- */
+/* If a desktop browser ends up on /watchlist, hide the duplicate main window version */
+.dashboard-container .content .watchlist-container {
+  display: none;
+}
+
+/* ==========================================================================
+   MOBILE-ONLY RESPONSIVE OVERRIDES (Max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Hide the fixed desktop left sidebar layout completely */
+  .desktop-watchlist-sidebar {
+    display: none !important;
+  }
+
+  /* Force the content router container to occupy 100% full screen area */
+  .content {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0px !important; /* Strips spacing so watchlist stretches edge-to-edge */
+  }
+
+  /* Allow the dynamic watchlist block to render natively inside the router view */
+  .dashboard-container .content .watchlist-container {
+    display: block !important;
+    width: 100% !important;
+    height: calc(100vh - 60px) !important; /* Fits perfectly underneath the top header */
+  }
+
+  /* Re-align your custom watchlist numbers bar to pin cleanly across phone footers */
+  .watchlist-number {
+    width: 100% !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    position: fixed !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-container{
+    padding: 15px 20px !important;
+  }
+}
+
+/* Mobile Responsiveness Styles */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Allows the table to slide horizontally instead of breaking the screen width */
+  .holdings-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  .positions-table{
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px; 
+  }
+
+  table {
+    min-width: 600px; /* Ensures the table data doesn't squish too aggressively */
+  }
+
+  /* 2. Changes the dashboard layout cards from row to a vertical column block */
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .col {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee; /* Clean separators for mobile */
+  }
+
+  .col:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Funds */
+/* --- Base Mobile-First & Responsiveness Styles --- */
+
+.funds {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.funds p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0 0 4px 0;
+}
+
+/* Make buttons full-width and touch-friendly on mobile */
+.funds .btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-green { background-color: #4caf50; color: white; }
+.btn-blue { background-color: #387ed1; color: white; }
+
+/* Main layout grid - defaults to a single vertical stack for mobile */
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+.col {
+  width: 100%;
+}
+
+.col span p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+  margin-bottom: 12px;
+}
+
+/* Financial Data List Layout */
+.table {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between ; /* Pushes text left and values right */
+  align-items: center;
+  padding: 12px 0;
+  font-size: 13px;
+  color: #0a0303;
+  border-bottom: 1px dashed #f0f0f0; /* Soft separator for cleaner mobile parsing */
+}
+
+.data:last-child {
+  border-bottom: none;
+}
+
+.data p {
+  margin: 0;
+}
+
+/* Highlighting important numbers */
+.imp {
+  font-weight: 600;
+  color: #333333;
+}
+
+.imp.colored {
+  color: #387ed1; /* Highlights available margin */
+  font-size: 15px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 8px 0;
+}
+
+/* Commodity CTA Box styling */
+.commodity {
+  background-color: #fcfcfc;
+  border: 1px dashed #e0e0e0;
+  padding: 24px 16px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.commodity p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+
+/* --- Desktop Responsive Adjustments --- */
+@media (min-width: 768px) {
+  .funds {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .funds p {
+    margin-right: auto; /* Pushes buttons to the right side of the screen */
+  }
+
+  .funds .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    width: auto;
+  }
+
+  .row {
+    flex-direction: row; /* Side-by-side columns on desktop */
+    gap: 40px;
+  }
+
+  .col {
+    flex: 1; /* Splits the space equally */
+  }
+}
+
+
+
+/* kite */
+/* ==========================================================================
+   Kite Login Base & Centering Layout
+   ========================================================================== */
+
+.kite-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.kite-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   Modern Dynamic Notification Pop-Up
+   ========================================================================== */
+
+.notification-popup {
+  position: fixed;
+  top: 20px;
+  /* Centered across mobile screens */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 280px;
+  max-width: 90%;
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  
+  /* Smooth entry animation */
+  animation: slideInDown 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Success vs Error color pallets */
+.notification-popup.success {
+  background-color: #4caf50;
+  border-left: 5px solid #2e7d32;
+}
+
+.notification-popup.error {
+  background-color: #ef0909;
+  border-left: 5px solid #ad2222;
+  color:#fff !important;
+}
+
+/* Notification Left Status Icon circle */
+.notification-popup .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(244, 238, 238);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Entrance Animation Keyframes */
+@keyframes slideInDown {
+  0% {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Inputs, Interactive Items & Buttons
+   ========================================================================== */
+
+.input-group-custom {
+  position: relative;
+  width: 100%;
+}
+
+.input-group-custom input {
+  width: 100%;
+  padding: 14px 44px 14px 12px;
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-group-custom input:focus {
+  border-color: #387ed1;
+}
+
+/* Standard Floating Label Logic targeting space placeholder state */
+.input-group-custom label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  padding: 0 4px;
+  color: #999999;
+  font-size: 15px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-group-custom input:focus ~ label,
+.input-group-custom input:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  color: #387ed1;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* user-select: none; */
+  font-size: 16px;
+  padding: 4px;
+}
+
+.btn-kite-login {
+  width: 100%;
+  padding: 13px;
+  background-color: #e64b1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-kite-login:hover {
+  background-color: #e64a19;
+}
+
+.kite-link {
+  font-size: 13px;
+  color: #387ed1;
+  text-decoration: none;
+}
+
+.kite-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Kite Brand Footer Layout
+   ========================================================================== */
+
+.kite-footer {
+  margin-top: 32px;
+}
+
+.store-icons img {
+  height: 34px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.store-icons img:hover {
+  opacity: 1;
+}
+
+.footer-brand {
+  height: 18px;
+  margin-top: 12px;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #999999;
+}
+
+.footer-text a {
+  color: #387ed1;
+}
+
+/* Utility Helpers */
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: 24px; }
+.mt-3 { margin-top: 16px; }
+.mt-4 { margin-top: 24px; }
+.ms-3 { margin-left: 16px; }
+
+/* ==========================================================================
+   Desktop Adjustments
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  /* Shifts the toast to a premium dashboard-style top-right alert layout */
+  .notification-popup {
+    top: 24px;
+    right: 24px;
+    left: auto;
+    transform: none;
+    min-width: 320px;
+    animation: slideInRight 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+/* topbar top link name */

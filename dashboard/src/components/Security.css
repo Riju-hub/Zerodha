@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Base Container & Typography (Mobile-First)
+   ========================================================================== */
+
+.security-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #444444;
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.security-wrapper * {
+  box-sizing: border-box;
+}
+
+.main-section-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0 0 24px 0;
+}
+
+/* ==========================================================================
+   Layout Structures
+   ========================================================================== */
+
+/* Stack the form and tips vertically by default on mobile */
+.security-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.password-column, 
+.tips-column {
+  width: 100%;
+}
+
+.sub-section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444444;
+  margin: 0 0 20px 0;
+}
+
+/* ==========================================================================
+   Kite Floating Labels & Form Elements
+   ========================================================================== */
+
+.floating-label-group {
+  position: relative;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Base style for text inputs */
+.kite-input {
+  width: 100%;
+  padding: 14px 40px 14px 12px; /* Right padding allows space for the eye icon */
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  color: #333333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kite-input:focus {
+  border-color: #387ed1;
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.1);
+}
+
+/* Interactive Floating Label behavior matching standard input states */
+.floating-label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff; /* Blocks out the input border line */
+  padding: 0 4px;
+  color: #999999;
+  font-size: 15px;
+  pointer-events: none;
+  transition: transform 0.2s ease, top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+/* Floating labels pop upwards when input has data inside or receives active focus */
+.kite-input:focus ~ .floating-label,
+.kite-input:valid ~ .floating-label {
+  top: 0;
+  font-size: 12px;
+  color: #387ed1;
+}
+
+/* Eye action placement inside input field blocks */
+.kite-eye {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999999;
+  cursor: pointer;
+  padding: 8px; /* Widens target threshold area for fingers on mobile viewports */
+  font-size: 14px;
+}
+
+.kite-eye:hover {
+  color: #666666;
+}
+
+/* ==========================================================================
+   Action Buttons
+   ========================================================================== */
+
+.kite-btn-group {
+  display: flex;
+  flex-direction: column; /* Stack actions on top of each other on narrow screens */
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btn-kite-submit,
+.btn-kite-cancel {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn-kite-submit {
+  background-color: #ff5722; /* Classic Kite primary emphasis orange brand accent */
+  color: #ffffff;
+}
+
+.btn-kite-submit:hover {
+  background-color: #e64a19;
+}
+
+.btn-kite-cancel {
+  background-color: transparent;
+  color: #999999;
+  border: 1px solid #cccccc;
+}
+
+.btn-kite-cancel:hover {
+  background-color: #f7f7f7;
+  color: #666666;
+}
+
+/* ==========================================================================
+   Sidebar Security Tips Card
+   ========================================================================== */
+
+.tips-column {
+  background-color: #fbfbfb;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.tips-header {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+}
+
+.kite-tips-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.kite-tips-list li {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.kite-tips-list li:last-child {
+  margin-bottom: 0;
+}
+
+.text-muted {
+  font-style: italic;
+  color: #999999;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Desktop Responsive Enhancements (Media Queries)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .security-wrapper {
+    padding: 32px;
+  }
+
+  .main-section-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  /* Separate the dynamic form inputs and information guides side-by-side */
+  .security-row {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .password-column {
+    flex: 2; /* Provides a wider focal block for processing input entries */
+  }
+
+  .tips-column {
+    flex: 1;
+    height: fit-content;
+    padding: 24px;
+  }
+
+  /* Inline the functional execution buttons horizontally on wide viewports */
+  .kite-btn-group {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .btn-kite-submit,
+  .btn-kite-cancel {
+    width: auto;
+    padding: 10px 24px;
+  }
+}

@@ -1,0 +1,314 @@
+.nav-link{
+  margin-left: 40px;
+}
+.footer-links a {
+  display: block;
+  margin-bottom: 15px;
+  color: #555;
+  text-decoration: none;
+}
+p{
+  color: #6c757d;
+}
+.footer-links a:hover {
+  color: #387ed1;
+}
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom-links a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  color: #387ed1;
+}
+.footer-links p{
+  color: black;
+}
+.nav-link:hover{
+  color: rgb(21, 165, 248) !important;
+}
+.nav-link.active {
+  color: #0d6efd !important; /* blue */
+}
+#supportHero{
+  background-color: #007bff;
+  color: white;
+}
+#supportHero a{
+  color: white;
+}
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px;
+  margin-top: 50px !important;
+}
+#supportHero input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* #  */
+#supportHero {
+  background-color: #007bff;
+  color: white;
+  /* Using a clean system font makes it look 'real' */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 60px 0; 
+}
+
+.featured-box a {
+  color: white;
+  font-size: 0.95rem;
+  display: block; /* Makes them stack like a list */
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 50px 10%; /* Responsive margins */
+}
+
+/* Styling the Search Section */
+.search-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+#supportHero input {
+  width: 100%;
+  max-width: 500px;
+  padding: 18px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Styling the Featured Section */
+.featured-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.featured-box ol {
+  padding-left: 20px;
+}
+
+.featured-box li {
+  margin-bottom: 15px;
+}
+
+/* Account signup styles */
+/* Account.css */
+.form_container {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.form_container h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.form_container form div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.form_container input {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form_container input:focus {
+  border-color: #387ed1; /* Zerodha Blue */
+}
+
+.form_container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #387ed1;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.form_container button:hover {
+  background-color: #2c65a8;
+}
+
+.form_container span {
+  font-size: 14px;
+  color: #666;
+}
+
+.form_container span a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+/* Adjust the SVG image size */
+.col-6 img {
+  width: 100%;
+  max-width: 450px;
+}
+
+
+/* Floating Label Logic */
+.input-group-custom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group-custom input {
+    width: 100%;
+    padding: 12px 40px 12px 15px; /* Added extra padding (40px) on the right for the eye */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    z-index: 10; /* Keeps it on top of the input */
+    /* user-select: none; */
+}
+
+.input-group-custom label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    color: #999;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+/* Move label up on focus or if input is not empty */
+.input-group-custom input:focus + label,
+.input-group-custom input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #444;
+}
+
+.btn-kite-login {
+    width: 100%;
+    background-color: #ff5722; /* Kite Orange */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-kite-login:hover {
+    background-color: #f44336;
+}
+
+.kite-link {
+    color: #9b9b9b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+.footer-text a {
+    color: #387ed1;
+    text-decoration: none;
+}
+
+/* This makes the dropdown span the full page width */
+.dropdown-menu.w-100 {
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0;
+}
+
+/* Remove the default bootstrap arrow */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Style for the link text in the mega menu */
+.dropdown-menu a:hover {
+    color: #387ed1 !important;
+    background: transparent;
+}
+/* Remove default link styling */
+.menu-div a {
+  text-decoration: none;
+  display: block; /* Makes the whole area clickable */
+  color: inherit;
+}
+
+/* Hover: Change H6 color */
+.menu-div:hover h6 {
+  color: #387ed1 !important;
+  transition: 0.3s;
+}
+
+/* Hover: Reduce image opacity */
+.menu-div:hover img {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.menu-education-div:hover p {
+  color: #1b6eb7 !important; 
+}
+.menu-education-div:hover img {
+  opacity: 0.7; /* Adjust this number (0.0 to 1.0) to your liking */
+  transition: opacity 0.3s ease; /* Optional: makes the fade smooth */
+}
